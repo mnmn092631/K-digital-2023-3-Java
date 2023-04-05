@@ -14,7 +14,9 @@ public class Test40 {
 		for(int i = 0; i < arr.length; i++) {
 			for(int j = 0; j <= i; j++) {
 				sum += arr[i][j];
+				System.out.print(arr[i][j] + "\t");
 			}
+			System.out.println("");
 		}
 		
 		System.out.println("합계 : " + sum);
