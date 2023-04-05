@@ -1,4 +1,4 @@
-package edu;
+package chapter1;
 
 public class Test1 {
 
