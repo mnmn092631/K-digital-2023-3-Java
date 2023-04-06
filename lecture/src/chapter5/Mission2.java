@@ -3,12 +3,12 @@ package chapter5;
 public class Mission2 {
 	
 	public void leapYear() {
-		int[] leapYears = new int[10];
+		int[] leapYears = new int[40];
 		
 		int year = 2023;
 		int i = 0;
 		
-		while(i < 10) {
+		while(i < 40) {
 			if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
 				leapYears[i++] = year;
 			}
