@@ -19,6 +19,7 @@ public class Mission1 {
 				}
 				System.out.print(temp);
 				System.out.print("\t");
+				
 			}
 			System.out.println("");
 		}
