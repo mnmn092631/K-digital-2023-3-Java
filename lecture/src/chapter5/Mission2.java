@@ -9,14 +9,15 @@ public class Mission2 {
 		int i = 0;
 		
 		while(i < 10) {
-			if(year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)) {
+			if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
 				leapYears[i++] = year;
 			}
 			year++;
 		}
 		
-		for(int j = 0; j < leapYears.length; j++) {
-			System.out.println(leapYears[j]);
+		
+		for(int y : leapYears) {
+			System.out.println(y);
 		}
 	}
 
