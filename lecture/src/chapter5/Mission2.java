@@ -2,6 +2,11 @@ package chapter5;
 
 public class Mission2 {
 	
+	public boolean isLeapYear(int year) {
+		if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0) return true;
+		return false;
+	}
+	
 	public void leapYear() {
 		int[] leapYears = new int[40];
 		
@@ -9,16 +14,12 @@ public class Mission2 {
 		int i = 0;
 		
 		while(i < 40) {
-			if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
-				leapYears[i++] = year;
-			}
+			if(isLeapYear(year)) leapYears[i++] = year;
 			year++;
 		}
 		
 		
-		for(int y : leapYears) {
-			System.out.println(y);
-		}
+		for(int y : leapYears) System.out.println(y);
 	}
 
 	public static void main(String[] args) {
