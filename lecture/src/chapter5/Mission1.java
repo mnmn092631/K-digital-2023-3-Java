@@ -1,8 +1,8 @@
-package chapter4;
+package chapter5;
 
 public class Mission1 {
-
-	public static void main(String[] args) {
+	
+	public void matrix() {
 		int[][] arr1 = { { 1, 2, 3, 4 },
 						{ 5, 6, 7, 8 },
 						{ 9, 10, 11, 12 } };
@@ -10,7 +10,7 @@ public class Mission1 {
 						{ 6, 7, 8 },
 						{ 9, 3, 1 },
 						{ 2, 3, 4 } };
-		
+
 		for(int i = 0; i < arr1.length; i++) {
 			for(int j = 0; j < arr1.length; j++) {
 				int temp = 0;
@@ -22,7 +22,11 @@ public class Mission1 {
 			}
 			System.out.println("");
 		}
-		
+	}
+
+	public static void main(String[] args) {
+		Mission1 m = new Mission1();
+		m.matrix();
 	}
 
 }
