@@ -6,7 +6,7 @@ public class LMSTest {
 //		Employee e = new Employee();
 //		System.out.println(e);
 		
-		Employee e1 = new Employee("홍길동", 20, "입학처");
+		EmployeeInterface e1 = new Employee("홍길동", 20, "입학처");
 		System.out.println(e1);
 		
 		Professor p = new Professor("김푸름", 52, "빅데이터");

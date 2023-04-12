@@ -1,6 +1,6 @@
 package chapter7;
 
-public class Employee extends Person {
+public class Employee extends Person implements EmployeeInterface {
 	private String dept;
 
 	public Employee() {
@@ -12,10 +12,12 @@ public class Employee extends Person {
 		this.dept = dept;
 	}
 	
+	@Override
 	public String getDept() {
 		return dept;
 	}
 
+	@Override
 	public void setDept(String dept) {
 		this.dept = dept;
 	}
