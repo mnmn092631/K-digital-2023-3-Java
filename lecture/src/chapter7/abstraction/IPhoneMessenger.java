@@ -25,5 +25,17 @@ public class IPhoneMessenger extends GraphicIOS implements Messenger, WorkFile {
 	public void fileDownload() {
 		System.out.println("file을 다운로드합니다.");
 	}
+	
+	@Override
+	public void draw_textBox() {
+		super.draw_textBox();
+		System.out.println("IPhoneMessenger : 텍스트 상자를 그린다.");
+	}
+	
+	@Override
+	public void draw_submitButton() {
+		super.draw_submitButton();
+		System.out.println("IPhoneMessenger : 전송버튼을 그린다.");
+	}
 
 }
