@@ -18,6 +18,8 @@ public class MessengerTest {
 		galaxy.getMessage();
 		galaxy.setMessage("hi");
 		galaxy.ChangeKeyboard();
+		galaxy.fileDownload();
+		galaxy.fileUpload();
 	}
 
 }
