@@ -13,6 +13,10 @@ public class MessengerTest {
 		iphone.getMessage();
 		iphone.setMessage("hello");
 		iphone.clearMessage();
+		iphone.draw_textBox();
+		iphone.draw_submitButton();
+		iphone.fileDownload();
+		iphone.fileUpload();
 		
 		galaxy.setLogin(true);
 		galaxy.getMessage();
