@@ -2,6 +2,7 @@ package chapter13;
 
 class Bag2<T extends Solid> {
 	private T thing;
+	private String owner;
 
 	public Bag2(T thing) {
 		this.thing = thing;
@@ -13,6 +14,20 @@ class Bag2<T extends Solid> {
 
 	public void setThing(T thing) {
 		this.thing = thing;
+	}
+
+	public String getOwner() {
+		return owner;
+	}
+
+	public void setOwner(String owner) {
+		this.owner = owner;
+	}
+
+	boolean isSameOwner(Bag2<?> obj) {
+		if (this.owner.equals(obj.getOwner()))
+			return true;
+		return false;
 	}
 
 	void showType() {
@@ -49,6 +64,12 @@ public class BagTest_2 {
 		Bag2<Notebook2> bag3 = new Bag2<>(new Notebook2());
 
 //		Bag2<Water> bag4 = new Bag2<>(new Water()); 오류 발생
+		
+		bag.setOwner("김푸름");
+		bag2.setOwner("김푸름");
+		
+		boolean result = bag2.isSameOwner(bag);
+		System.out.println(result);
 	}
 
 }
